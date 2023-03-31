@@ -1,24 +1,5 @@
 // Business Logic
 
-const subs = ["Beep!", "Boop!", "Won't you be my neighbor"];
-
-function beep() {
-  let result = []
-  if (number === 1 ){
-    result = "Beep!";
-  } else if (number === 2){
-    result = "Boop!";
-  } else if (number === 3) {
-    result = "Won't you be my neighbor?";
-  } else {
-    result = "number";
-  }
-}
-
-
-
-
-
 
 
 
@@ -32,10 +13,9 @@ function numberReturn(event) {
   const number = document.getElementById("number").value;
 
   let result = [];
+  const subs = ["Beep!", "Boop!", "Won't you be my neighbor"];
+    
   
-  
-  //document.getElementById("output").innerText = arrayResults.join(" ");
-  //document.getElementById("robotspeak").reset();
   document.querySelector("p#output").innerText = result;
   document.querySelector("p#output").removeAttribute("class");
 }

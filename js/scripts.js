@@ -11,10 +11,12 @@
 function numberReturn(event) {
   event.preventDefault();
   const userInput = document.getElementById("userInput").value;
-
   
-  document.querySelector("p#output").innerText = result;
-  document.querySelector("p#output").removeAttribute("class");
+  const paragraph = document.createElement("p");
+  paragraph.append(userInput);
+  document.body.append(paragraph);
+  document.getElementById("robotspeak").reset();
+  
 }
 
 window.addEventListener("load", function() {

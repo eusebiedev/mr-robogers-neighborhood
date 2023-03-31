@@ -10,11 +10,8 @@
 
 function numberReturn(event) {
   event.preventDefault();
-  const number = document.getElementById("number").value;
+  const userInput = document.getElementById("userInput").value;
 
-  let result = [];
-  const subs = ["Beep!", "Boop!", "Won't you be my neighbor"];
-    
   
   document.querySelector("p#output").innerText = result;
   document.querySelector("p#output").removeAttribute("class");

@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.hidden {
+  display: none;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+}

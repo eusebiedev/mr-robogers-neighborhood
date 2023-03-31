@@ -28,6 +28,7 @@ _This application takes the user inputted number and returns a list of value sub
 
 * _As of 03/31/2023_
 * _When a user inputs a number with all predefined values, the output does not combine them into a string with all substitutions displayed._
+* _User is not able to enter any string of numbers to see new results yet_
 
 ## [MIT](https://opensource.org/license/mit/)
 

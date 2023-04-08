@@ -4,7 +4,6 @@
 
 #### _Application to replace users inputted numbers with predefined substitutions._
 
-
 ## Technologies Used
 
 * _VS Code_

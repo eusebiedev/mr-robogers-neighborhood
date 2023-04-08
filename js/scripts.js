@@ -1,32 +1,32 @@
-// Business Logic=
+// Business Logic
 
-
-
-
+function numberUp(userInput) {
+  let robotArray = [];
+  for (let index = 0; index <= userInput; index ++) {
+    if (index.toString().includes("3")) {
+      robotArray.push("Won't you be my neighbor?");
+    } else if (index.toString().includes("2")) {
+      robotArray.push("Boop!");
+    } else if (index.toString().includes("1")) {
+      robotArray.push("Beep!");
+    } else {
+      robotArray.push(index);
+    }
+  }
+  return robotArray.reverse();
+}
 
 // UI Logic
 
-function numberReturn(event) {
+function handleFormSubmission(event) {
   event.preventDefault();
   const userInput = document.getElementById("userInput").value;
-
-let output = [];
-if (userInput === "1") {
-  result = "Beep!";
-} else if (userInput === "2") {
-  result = "Boop!";
-} else if (userInput === "3") {
-  result = "Won't you be my neighbor?";
-} else {
-  result = "Try Again!";
-}   
-
-  document.getElementById("robotspeak").reset();
-  document.getElementById("output").innerText = output.toString() + result;
+  let robotArray = numberUp(userInput);
+  document.getElementById("robot-speak").reset();
+  document.getElementById("output").innerText = robotArray.join(", ");
   document.querySelector("p#output").removeAttribute("class");
-
 }
+
 window.addEventListener("load", function() {
-  const form = document.getElementById("robotspeak");
-  form.addEventListener("submit", numberReturn);
+document.getElementById("robot-speak").addEventListener("submit", handleFormSubmission);
 });
